@@ -1,0 +1,48 @@
+.quotes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7.2rem;
+
+  &__quote {
+    margin-right: 2.4rem;
+    position: relative;
+
+    .text {
+      font-family: 'roboto', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      text-align: center;
+      color: $color-black;
+    }
+
+    .quotes-up-first {
+      position: absolute;
+      top: -1.2rem;
+      left: -3.1rem;
+      opacity: .5;
+    }
+
+    .quotes-down-first {
+      position: absolute;
+      top: 32px;
+      right: -27px;
+      opacity: .5;
+    }
+
+    .quotes-up-second {
+      position: absolute;
+      top: -.9rem;
+      left: -3.3rem;
+      opacity: .5;
+    }
+
+    .quotes-down-second {
+      position: absolute;
+      bottom: -1rem;
+      right: -1.6rem;
+      opacity: .5;
+    }
+  }
+}

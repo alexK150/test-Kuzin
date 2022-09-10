@@ -1,0 +1,69 @@
+.portfolio-experience {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'roboto', serif;
+  font-style: normal;
+
+  .portfolio {
+    padding-right: 2.4rem;
+    &__title {
+      @include title-h3
+    }
+  }
+
+  .portfolio__technologies-list, .experience__skills-list {
+    margin-top: 2.4rem;
+    position: relative;
+    list-style-type: none;
+  }
+
+  .list-element {
+    font-family: 'roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $color-link;
+    margin-left: 1.5rem;
+    margin-bottom: .8rem;
+    transition: all .2s ease;
+  }
+  .list-element::before {
+    content: url("../../../public/assets/img/line.svg");
+    width: 1.1rem;
+    position: absolute;
+    -webkit-transform: translateY(-18%);
+    -ms-transform: translateY(-18%);
+    transform: translateY(-18%);
+    left: 0;
+    right: 98%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .list-element:hover {
+    color: $color-hover;
+  }
+
+  .experience {
+    margin-left: 2.4rem;
+
+    &__title {
+      @include title-h3
+    }
+
+    .skill {
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      color: $color-black;
+
+      .skill-year {
+        color: $color-link;
+        font-weight: 400;
+        margin-left: .8rem;
+        text-decoration: underline dotted $color-link;
+      }
+    }
+  }
+}

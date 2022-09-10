@@ -12,22 +12,33 @@
 
     .header__print {
       display: flex;
+      height: 2.4rem;
 
       //todo выяснить цвет принтера, на макете отличается, пока #ffffff
-      .printer {
-        background-image: url("../../../public/assets/icons/printer.svg");
-        height: 2.4rem;
-        width: 2.4rem;
-        display: inline-block;
+      svg {
+        transition: all .3s ease;
+        fill: white;
       }
+
       .print-text {
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 2.4rem;
         color: $color-link;
-        display: inline-block;
+        display: inline;
         align-items: center;
         margin-left: .8rem;
+        height: content-box;
+        transition: all .2s ease;
+      }
+
+      &:hover .print-text {
+        color: $color-hover;
+      }
+      &:hover {
+        svg {
+          fill: $color-hover;
+        }
       }
     }
   }
@@ -99,5 +110,4 @@
       }
     }
   }
-
 }
