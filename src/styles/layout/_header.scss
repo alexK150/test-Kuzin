@@ -1,6 +1,103 @@
 .header {
   font-family: 'roboto', serif;
   width: 100%;
-  margin-left: 15.6rem;
-  margin-right: 15.6rem;
+  background-color: $color-paleGrey;
+  padding-top: 4rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15.6rem;
+    margin-right: 15.6rem;
+
+    .header__print {
+      display: flex;
+
+      //todo выяснить цвет принтера, на макете отличается, пока #ffffff
+      .printer {
+        background-image: url("../../../public/assets/icons/printer.svg");
+        height: 2.4rem;
+        width: 2.4rem;
+        display: inline-block;
+      }
+      .print-text {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $color-link;
+        display: inline-block;
+        align-items: center;
+        margin-left: .8rem;
+      }
+    }
+  }
+
+  &__user {
+    display: flex;
+    margin-bottom: 1.6rem;
+
+    &--info {
+      margin-left: 2.4rem;
+      color: $color-black;
+      font-style: normal;
+
+      .name {
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 4.8rem;
+      }
+
+      .from {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin-top: .8rem;
+      }
+
+      .language {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        display: flex;
+        align-items: center;
+
+        .flag {
+          background-image: url("../../../public/assets/icons/gb.svg");
+          width: 2.4rem;
+          height: 2.4rem;
+          display: inline-block;
+        }
+
+        .eng {
+          margin-left: .8rem;
+        }
+      }
+
+      .skills {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        color: $white;
+        margin-top: 1.6rem;
+
+        .skill {
+          padding: .4rem .8rem;
+          background-color: #333333;
+          margin-right: .8rem;
+          border-radius: .4rem;
+        }
+        .skills-btn {
+          background: #333333;
+          border-radius: .4rem;
+          outline: none;
+          border: none;
+          padding: .5rem .6rem;
+          height: 2.4rem;
+        }
+      }
+    }
+  }
+
 }
