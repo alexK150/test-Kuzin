@@ -6,6 +6,7 @@
 }
 
 .code-editor {
+  margin-top: 1.6rem;
   font-family: sans-serif;
   text-align: center;
 
@@ -44,7 +45,6 @@
   }
   .write-code {
     padding-left: 4rem;
-    width: 100%;
     background-color: #eef2f3;
     border-color: #eef2f3;
     color: $color-black;

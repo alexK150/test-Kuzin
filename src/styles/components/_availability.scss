@@ -1,0 +1,29 @@
+.availability-and-preferences {
+  margin-left: 2.4rem;
+
+  .availability__title, .preferences__title {
+    @include title-h3
+  }
+
+  .availability__text, .preferences__text {
+    font-family: 'roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .availability {
+    &__text {
+      margin-top: 2.4rem;
+    }
+  }
+
+  .preferences {
+    margin-top: 2.4rem;
+
+    &__text {
+      margin-top: 1.6rem;
+    }
+  }
+}

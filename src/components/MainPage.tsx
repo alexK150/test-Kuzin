@@ -8,18 +8,16 @@ import SimpleCodeEditor from "./SimpleCodeEditor";
 const MainPage = () => {
     return (
         <main className="main">
-            <div>
-                <div className="main__exp-and-quotes">
-                    <ExpirienceInfo/>
-                    <Quotes/>
-                </div>
-                <div className="main__location-and-availability">
-                    <LocationMap/>
-                    <Availability/>
-                </div>
+            <div className="main__exp-and-quotes">
+                <ExpirienceInfo/>
+                <Quotes/>
+            </div>
+            <div className="main__code-editor-and-availability">
+                <SimpleCodeEditor/>
+                <Availability/>
             </div>
             <div className="code-map-env">
-                <SimpleCodeEditor/>
+                <LocationMap/>
             </div>
         </main>
     );
