@@ -1,0 +1,54 @@
+.code-editor-block {
+
+  &__title {
+    @include title-h3;
+  }
+}
+
+.code-editor {
+  font-family: sans-serif;
+  text-align: center;
+
+  .write-code,
+  .line-counter {
+    font-family: 'roboto', serif;
+    margin: 0;
+    padding: 1rem 0;
+    height: 16.1rem;
+    width: 26.4rem;
+    border-radius: 0;
+    resize: none;
+    font-size: 1.6rem;
+    outline: none;
+  }
+  .line-counter:focus-visible,
+  .write-code:focus-visible {
+    outline: none;
+  }
+  .line-counter {
+    display: flex;
+    overflow-y: hidden;
+    text-align: right;
+    box-shadow: none;
+    position: absolute;
+    width: 3.5rem;
+    background-color: #eef2f3;
+    border-color: #eef2f3;
+    border-radius: 8px;
+    font-family: 'roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #808481;
+  }
+  .write-code {
+    padding-left: 4rem;
+    width: 100%;
+    background-color: #eef2f3;
+    border-color: #eef2f3;
+    color: $color-black;
+    border-radius: 8px;
+    line-height: 2rem;
+  }
+}
