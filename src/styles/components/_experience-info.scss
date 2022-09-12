@@ -6,6 +6,7 @@
 
   .portfolio {
     padding-right: 2.4rem;
+    width: 24.5rem;
     &__title {
       @include title-h3
     }
@@ -63,6 +64,12 @@
         font-weight: 400;
         margin-left: .8rem;
         text-decoration: underline dotted $color-link;
+        transition: all .2s ease;
+
+        &:hover {
+          color: $color-hover;
+          text-decoration: underline dotted $color-hover;
+        }
       }
     }
   }

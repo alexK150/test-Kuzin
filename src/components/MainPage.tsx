@@ -1,6 +1,6 @@
 import React from 'react';
 import ExpirienceInfo from "./ExpirienceInfo";
-import LocationMap from "./LocationAndAvailability";
+import LocationMap from "./LocationMap";
 import Availability from "./Availability";
 import Quotes from "./Quotes";
 import SimpleCodeEditor from "./SimpleCodeEditor";
@@ -12,11 +12,11 @@ const MainPage = () => {
                 <ExpirienceInfo/>
                 <Quotes/>
             </div>
-            <div className="main__code-editor-and-availability">
-                <SimpleCodeEditor/>
-                <Availability/>
-            </div>
-            <div className="code-map-env">
+            <div className="main__right-block">
+                <div className="main__code-editor-and-availability">
+                    <SimpleCodeEditor/>
+                    <Availability/>
+                </div>
                 <LocationMap/>
             </div>
         </main>
